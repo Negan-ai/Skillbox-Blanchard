@@ -222,6 +222,25 @@
         max-width: 280px;
     }
 
+    .modal-gallery {
+        width: 594px;
+        height: 594px;
+        background-size: 264px 594px;
+    }
+
+    .modal__content {
+        max-width: 231px;
+    }
+
+    .madal__title {
+        margin-bottom: 9px;
+        display: block;
+    }
+
+    .modal__year {
+        display: block;
+    }
+
     /* catalog */
 
     .catalog__btns {

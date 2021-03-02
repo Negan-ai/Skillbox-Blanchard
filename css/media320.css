@@ -188,6 +188,24 @@
         min-height: 367px;
     }
 
+    .modal-gallery {
+        width: 290px;
+        background-size: 290px 199px;
+        background-position: top;
+    }
+
+    .fancybox-content {
+        padding: 152px 20px 0px;
+    }
+
+    .modal__year {
+        margin-bottom: 10px;
+    }
+
+    .modal__descr {
+        margin: 0;
+    }
+
     /* catalog */
 
     .catalog {

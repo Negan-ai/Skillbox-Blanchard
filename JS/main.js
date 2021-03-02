@@ -76,6 +76,12 @@ $(document).ready(function() {
 });
 
 // * select-menu *//
+$(document).ready(function() {
+  $('.hero').click(function(event) {
+      $('.select-menu__item, .dropdown__list').removeClass('selected');
+  });
+});
+
 // realism //
 $(document).ready(function() {
   $('.realism').click(function(event) {
@@ -140,12 +146,6 @@ $(document).ready(function() {
       $('.realism, .impressionism, .post-impressionism, .vanguard').removeClass('selected');
   });
 });
-
-// $(document).ready(function() {
-//   $('.search__input').click(function(event) {
-//       $('a.realism__btn + .simplebar-scrollbar::before').toggleClass('is-focus');
-//   });
-// });
 
 /* search */
 $(document).ready(function() {
