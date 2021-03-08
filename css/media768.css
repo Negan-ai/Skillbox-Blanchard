@@ -115,9 +115,6 @@
         background-size: 668px 419px;
     }
 
-    .tab-link-active {
-        padding-top: 454px;
-    }
     .autor__age {
         margin-bottom: 10px;
     }
@@ -265,15 +262,13 @@
         height: 109px;
     }
 
-    .tooltop__btn {
+    .tooltip__btn-x {
         top: 7px;
     }
 
-    .tooltip-1::before, 
-.tooltip-2::before, 
-.tooltip-3::before {
-    top: -45px;
-}
+    .tooltip .tooltip__text {
+        bottom: calc(100% - -7px);
+    }
 
     .next-3, .prev-3 {
         top: 41px;

@@ -290,10 +290,6 @@
         background-size: 290px 181px;
     }
 
-    .tab-link-active {
-        padding-top: 205px;
-    }
-
     .autor__name {
         margin-bottom: 15px;
     }
@@ -545,16 +541,10 @@
         min-width: 195px;
         min-height: 65px;
     }
- 
-.tooltip-2::before {
-    top: -35px;
-    left: -25px;
-    width: 240px;
-} 
-.tooltip-3::before {
-    left: -104px;
-    width: 240px;
-}
+
+    .tooltip .mobile-tooltip-3 {
+        left: -100px;
+    }
 
     .next-3, .prev-3 {
         top: 17px;

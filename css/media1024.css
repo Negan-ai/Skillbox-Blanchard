@@ -250,11 +250,9 @@
 
     .catalog-content__left {
         background-size: 437px 273px;
-
     }
 
     .tab-link-active {
-        padding-top: 307px;
         height: 732px;
         justify-content: flex-start;
     }
@@ -355,64 +353,48 @@
         top: 48px;
     }
 
-    .projects__tooltip {
+    .tooltip__btn {
         border: 1px solid var(--purple-color);
         background-color: transparent;
         border-radius: 50%;
         background-image: url("../img/prolects-img/i-tooltip-media.png");
     }
 
-    .tooltop__btn {
+    .tooltip .tooltip__text {
+        bottom: calc(100% - -82px);
+    }
+
+    .tooltip__btn-x {
+        display: inline-block;
         position: absolute;
         top: -40px;
         width: 16px;
         height: 16px;
         left: 50%;
-        right: 50%;
+        border: none;
         border-radius: 50%;
         opacity: 0;
-        transform: translate(-50%, -50%);
+        visibility: hidden;
+        transform: translate(-50%);
         background-color: var(--purple-color);
         background-image: url("../img/prolects-img/X-tooltip.png");
         background-repeat: no-repeat;
         background-position: center center;
     }
 
-    .projects__tooltip:focus .tooltop__btn {
-        opacity: 1;
-    }
-
-    .tooltip-1::before {
-        content: "Пример современных тенденций - современная методология разработки ";
-        top: -85px;
-    }
-
-    .tooltip-2::before {
-        content: "В стремлении повысить качество";
-        top: -85px;
-    }
-
-    .tooltip-3::before {
-        content: "Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции";
-        top: -85px;
-    }
-    
-    .tooltip-1::after,
-    .tooltip-2::after,
-    .tooltip-3::after {
+    .tooltip__text::after {
         content: none;
     }
 
-    .tooltip-1:focus::before, 
-.tooltip-1:focus::after,
-.tooltip-2:focus::before, 
-.tooltip-2:focus::after,
-.tooltip-3:focus::before, 
-.tooltip-3:focus::after {
+
+    .tooltip:focus-within > .tooltip__btn-x {
     opacity: 1;
-    z-index: 1;
-    transition: .3s;
-}
+    visibility: visible;
+    }
+
+    .tooltip-closed {
+        display: none;
+    }
 
     /* contacts */
 

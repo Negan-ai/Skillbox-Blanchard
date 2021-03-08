@@ -386,6 +386,197 @@ document.addEventListener('DOMContentLoaded', function() {
   })
   })
 
+  $(document).ready(function() {
+  $('.belgium-1').click(function(event) {
+      $('.belgium-2, .belgium-6, .belgium-3, .belgium-4, .belgium-5, .belgium-12').removeClass('name-default-1');
+  });
+  $('.belgium-1').click(function(event) {
+    $('.belgium-1').addClass('name-default-1');
+});
+$('.belgium-2').click(function(event) {
+  $('.belgium-1, .belgium-3, .belgium-6, .belgium-4, .belgium-5, .belgium-12').removeClass('name-default-1');
+});
+$('.belgium-2').click(function(event) {
+$('.belgium-2').addClass('name-default-1');
+});
+$('.belgium-3').click(function(event) {
+  $('.belgium-1, .belgium-2, .belgium-6, .belgium-4, .belgium-5, .belgium-12').removeClass('name-default-1');
+});
+$('.belgium-3').click(function(event) {
+$('.belgium-3').addClass('name-default-1');
+});
+$('.belgium-4').click(function(event) {
+  $('.belgium-1, .belgium-2, .belgium-6, .belgium-3, .belgium-5, .belgium-12').removeClass('name-default-1');
+});
+$('.belgium-4').click(function(event) {
+$('.belgium-4').addClass('name-default-1');
+});
+$('.belgium-5').click(function(event) {
+  $('.belgium-1, .belgium-2, .belgium-6, .belgium-4, .belgium-3, .belgium-12').removeClass('name-default-1');
+});
+$('.belgium-5').click(function(event) {
+$('.belgium-5').addClass('name-default-1');
+});
+$('.belgium-6').click(function(event) {
+  $('.belgium-1, .belgium-2, .belgium-5, .belgium-4, .belgium-3, .belgium-12').removeClass('name-default-1');
+});
+$('.belgium-6').click(function(event) {
+$('.belgium-6').addClass('name-default-1');
+});
+});
+$(document).ready(function() {
+  $('.italy-1').click(function(event) {
+      $('.italy-2, .italy-6, .italy-3, .italy-4, .italy-5, .italy-12').removeClass('name-default-1');
+  });
+  $('.italy-1').click(function(event) {
+    $('.italy-1').addClass('name-default-1');
+});
+$('.italy-2').click(function(event) {
+  $('.italy-1, .italy-3, .italy-6, .italy-4, .italy-5, .italy-12').removeClass('name-default-1');
+});
+$('.italy-2').click(function(event) {
+$('.italy-2').addClass('name-default-1');
+});
+$('.italy-3').click(function(event) {
+  $('.italy-1, .italy-2, .italy-6, .italy-4, .italy-5, .italy-12').removeClass('name-default-1');
+});
+$('.italy-3').click(function(event) {
+$('.italy-3').addClass('name-default-1');
+});
+$('.italy-4').click(function(event) {
+  $('.italy-1, .italy-2, .italy-6, .italy-3, .italy-5, .italy-12').removeClass('name-default-1');
+});
+$('.italy-4').click(function(event) {
+$('.italy-4').addClass('name-default-1');
+});
+$('.italy-5').click(function(event) {
+  $('.italy-1, .italy-2, .italy-6, .italy-4, .italy-3, .italy-12').removeClass('name-default-1');
+});
+$('.italy-5').click(function(event) {
+$('.italy-5').addClass('name-default-1');
+});
+$('.italy-6').click(function(event) {
+  $('.italy-1, .italy-2, .italy-5, .italy-4, .italy-3, .italy-12').removeClass('name-default-1');
+});
+$('.italy-6').click(function(event) {
+$('.italy-6').addClass('name-default-1');
+});
+});
+$(document).ready(function() {
+  $('.russia-1').click(function(event) {
+      $('.russia-2, .russia-6, .russia-3, .russia-4, .russia-5, .russia-12').removeClass('name-default-1');
+  });
+  $('.russia-1').click(function(event) {
+    $('.russia-1').addClass('name-default-1');
+});
+$('.russia-2').click(function(event) {
+  $('.russia-1, .russia-3, .russia-6, .russia-4, .russia-5, .russia-12').removeClass('name-default-1');
+});
+$('.russia-2').click(function(event) {
+$('.russia-2').addClass('name-default-1');
+});
+$('.russia-3').click(function(event) {
+  $('.russia-1, .russia-2, .russia-6, .russia-4, .russia-5, .russia-12').removeClass('name-default-1');
+});
+$('.russia-3').click(function(event) {
+$('.russia-3').addClass('name-default-1');
+});
+$('.russia-4').click(function(event) {
+  $('.russia-1, .russia-2, .russia-6, .russia-3, .russia-5, .russia-12').removeClass('name-default-1');
+});
+$('.russia-4').click(function(event) {
+$('.russia-4').addClass('name-default-1');
+});
+$('.russia-5').click(function(event) {
+  $('.russia-1, .russia-2, .russia-6, .russia-4, .russia-3, .russia-12').removeClass('name-default-1');
+});
+$('.russia-5').click(function(event) {
+$('.russia-5').addClass('name-default-1');
+});
+$('.russia-6').click(function(event) {
+  $('.russia-1, .russia-2, .russia-5, .russia-4, .russia-3, .russia-12').removeClass('name-default-1');
+});
+$('.russia-6').click(function(event) {
+$('.russia-6').addClass('name-default-1');
+});
+});
+$(document).ready(function() {
+  $('.france-1').click(function(event) {
+      $('.france-2, .france-6, .france-3, .france-4, .france-5, .france-12').removeClass('name-default-1');
+  });
+  $('.france-1').click(function(event) {
+    $('.france-1').addClass('name-default-1');
+});
+$('.france-2').click(function(event) {
+  $('.france-1, .france-3, .france-6, .france-4, .france-5, .france-12').removeClass('name-default-1');
+});
+$('.france-2').click(function(event) {
+$('.france-2').addClass('name-default-1');
+});
+$('.france-3').click(function(event) {
+  $('.france-1, .france-2, .france-6, .france-4, .france-5, .france-12').removeClass('name-default-1');
+});
+$('.france-3').click(function(event) {
+$('.france-3').addClass('name-default-1');
+});
+$('.france-4').click(function(event) {
+  $('.france-1, .france-2, .france-6, .france-3, .france-5, .france-12').removeClass('name-default-1');
+});
+$('.france-4').click(function(event) {
+$('.france-4').addClass('name-default-1');
+});
+$('.france-5').click(function(event) {
+  $('.france-1, .france-2, .france-6, .france-4, .france-3, .france-12').removeClass('name-default-1');
+});
+$('.france-5').click(function(event) {
+$('.france-5').addClass('name-default-1');
+});
+$('.france-6').click(function(event) {
+  $('.france-1, .france-2, .france-5, .france-4, .france-3, .france-12').removeClass('name-default-1');
+});
+$('.france-6').click(function(event) {
+$('.france-6').addClass('name-default-1');
+});
+});
+$(document).ready(function() {
+  $('.germany-1').click(function(event) {
+      $('.germany-2, .germany-6, .germany-3, .germany-4, .germany-5, .germany-12').removeClass('name-default-1');
+  });
+  $('.germany-1').click(function(event) {
+    $('.germany-1').addClass('name-default-1');
+});
+$('.germany-2').click(function(event) {
+  $('.germany-1, .germany-3, .germany-6, .germany-4, .germany-5, .germany-12').removeClass('name-default-1');
+});
+$('.germany-2').click(function(event) {
+$('.germany-2').addClass('name-default-1');
+});
+$('.germany-3').click(function(event) {
+  $('.germany-1, .germany-2, .germany-6, .germany-4, .germany-5, .germany-12').removeClass('name-default-1');
+});
+$('.germany-3').click(function(event) {
+$('.germany-3').addClass('name-default-1');
+});
+$('.germany-4').click(function(event) {
+  $('.germany-1, .germany-2, .germany-6, .germany-3, .germany-5, .germany-12').removeClass('name-default-1');
+});
+$('.germany-4').click(function(event) {
+$('.germany-4').addClass('name-default-1');
+});
+$('.germany-5').click(function(event) {
+  $('.germany-1, .germany-2, .germany-6, .germany-4, .germany-3, .germany-12').removeClass('name-default-1');
+});
+$('.germany-5').click(function(event) {
+$('.germany-5').addClass('name-default-1');
+});
+$('.germany-6').click(function(event) {
+  $('.germany-1, .germany-2, .germany-5, .germany-4, .germany-3, .germany-12').removeClass('name-default-1');
+});
+$('.germany-6').click(function(event) {
+$('.germany-6').addClass('name-default-1');
+});
+});
+
 /* accordion */
 $(function () {
 	$("#accordion").accordion({
@@ -421,46 +612,41 @@ $(function () {
 		heightStyle: "content"
 	});
 });
-$(document).ready(function() {
-  $('.title-1').click(function(event) {
-      $('.btn-1').toggleClass('accordion__btn-active');
-  });
-});
-$(document).ready(function() {
-  $('.title-2').click(function(event) {
-      $('.btn-2').toggleClass('accordion__btn-active');
-  });
-});
-$(document).ready(function() {
-  $('.title-3').click(function(event) {
-      $('.btn-3').toggleClass('accordion__btn-active');
-  });
-});
-$(document).ready(function() {
-  $('.title-4').click(function(event) {
-      $('.btn-4').toggleClass('accordion__btn-active');
-  });
-});
-$(document).ready(function() {
-  $('.title-5').click(function(event) {
-      $('.btn-5').toggleClass('accordion__btn-active');
-  });
-});
-$(document).ready(function() {
-  $('.title-6').click(function(event) {
-      $('.btn-6').toggleClass('accordion__btn-active');
-  });
-});
-$(document).ready(function() {
-  $('.title-7').click(function(event) {
-      $('.btn-7').toggleClass('accordion__btn-active');
-  });
-});
 
 $(document).ready(function() {
   $('.laguage__btn').click(function(event) {
       $('.laguage__btn').removeClass('default');
   });
+  $('.laguage__btn-1').click(function(event) {
+    $('.laguage__btn-1').addClass('default');
+});
+$('.laguage__btn-1').click(function(event) {
+  $('.laguage__btn-5, .laguage__btn-4, .laguage__btn-3, .laguage__btn-2').removeClass('default');
+});
+$('.laguage__btn-2').click(function(event) {
+  $('.laguage__btn-2').addClass('default');
+});
+$('.laguage__btn-2').click(function(event) {
+  $('.laguage__btn-5, .laguage__btn-4, .laguage__btn-3, .laguage__btn-1').removeClass('default');
+});
+$('.laguage__btn-3').click(function(event) {
+  $('.laguage__btn-3').addClass('default');
+});
+$('.laguage__btn-3').click(function(event) {
+  $('.laguage__btn-5, .laguage__btn-4, .laguage__btn-2, .laguage__btn-1').removeClass('default');
+});
+$('.laguage__btn-4').click(function(event) {
+  $('.laguage__btn-4').addClass('default');
+});
+$('.laguage__btn-4').click(function(event) {
+  $('.laguage__btn-5, .laguage__btn-3, .laguage__btn-3, .laguage__btn-1').removeClass('default');
+});
+$('.laguage__btn-5').click(function(event) {
+  $('.laguage__btn-5').addClass('default');
+});
+$('.laguage__btn-5').click(function(event) {
+  $('.laguage__btn-2, .laguage__btn-4, .laguage__btn-3, .laguage__btn-1').removeClass('default');
+});
 });
 
 /* events */
@@ -631,6 +817,14 @@ var swiper = new Swiper('.projects-container', {
     },
 });
 
+$(document).ready(function() {
+  $('.tooltip__btn-x').click(function(event) {
+      $('.tooltip__btn-x').addClass('tooltip-closed');
+  });
+  $('.tooltip__btn').click(function(event) {
+    $('.tooltip__btn-x').removeClass('tooltip-closed');
+});
+});
 /* map */
 ymaps.ready(init);
 function init(){
