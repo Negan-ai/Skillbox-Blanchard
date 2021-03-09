@@ -568,6 +568,7 @@ button, input {
     outline: none;
     position: relative;
     font-size: 18px;
+    caret-color: var(--purple-color);
     width: 218px;
     line-height: 0;
     border: 3px solid transparent;
