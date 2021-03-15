@@ -1,5 +1,12 @@
-/* font */
+@import url('../css/jquery-ui.min.css');
+@import url('../css/jquery.fancybox.css');
+@import url('../css/choices.min.css');
+@import url('../css/simplebar.css');
+@import url('../css/jquery.scrollbar.css');
+@import url('../css/swiper-bundle.min.css');
+@import url('../css/normalize.css');
 
+/* font */
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Light.woff') format('woff');
@@ -1365,6 +1372,7 @@ button, input {
 
 .events-content {
     padding-top: 21px;
+    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -25px;

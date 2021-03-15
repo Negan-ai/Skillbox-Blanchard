@@ -306,6 +306,7 @@
 
     .events-slider {
         display: block;
+        padding: 0;
         overflow: hidden;
         height: 730px;
     }
