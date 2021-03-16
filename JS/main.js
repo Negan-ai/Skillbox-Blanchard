@@ -770,7 +770,7 @@ var swiper = new Swiper('.editions-container', {
     // when window width is >= 480px
     980: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 50,
       slidesPerGroup: 2
     },
     // when window width is >= 640px

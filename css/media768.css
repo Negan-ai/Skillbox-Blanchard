@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
     /* header */
 
     .media-search-content {
@@ -224,22 +224,9 @@
         max-width: 290px;
     }
 
-    .pag2 {
-        top: 314px;
-        left: 14px;
-    }
-
-    .next-2,
-    .prev-2 {
-        top: 308px;
-    }
-
-    .next-2 {
-        left: 100px;
-    }
-
-    .prev-2 {
-        left: 0;
+    .editions-slider__pag {
+        top: 50px;
+        left: -27px;
     }
 
     /* projects */
