@@ -1,9 +1,5 @@
-@media screen and (max-width: 576px)  {
+@media screen and (max-width: 576px) {
     /* common */
-
-    h1 {
-        font-size: 1px;
-    }
 
     .site-heading {
         font-size: 28px;
@@ -37,7 +33,7 @@
 
     .burger-dropdown__item {
         font-size: 16px;
-        line-height: 32px;   
+        line-height: 32px;
     }
 
     .burger-dropdown__btn {
@@ -127,8 +123,7 @@
     }
 
     .hero__link {
-        width: 200px;
-        height: 40px;
+        padding: 10px 16px;
         font-size: 12px;
     }
 
@@ -137,7 +132,7 @@
         height: 40px;
     }
 
-    /* about */ 
+    /* about */
 
     .about {
         padding-top: 53px;
@@ -154,6 +149,10 @@
     }
 
     /* gallery */
+
+    .choices__inner {
+        min-height: 40px;
+    }
 
     .gallery {
         padding-top: 54px;
@@ -209,12 +208,13 @@
     /* catalog */
 
     .catalog {
-    padding-bottom: 24px;
-    padding-top: 84px;
+        padding-bottom: 24px;
+        padding-top: 84px;
     }
 
     .catalog__btns {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 11px;
     }
 
     .btns__language {
@@ -236,6 +236,10 @@
         background-size: 32px 32px;
     }
 
+    .autor__image {
+        margin-bottom: 23px;
+    }
+
     .catalog-content__descr {
         display: none;
     }
@@ -255,6 +259,9 @@
 
     .ui-accordion-content-active {
         height: 100%;
+    }
+    .ui-accordion-header-active .accordion__btn::before {
+        top: 11px;
     }
 
     .accordion__btn {
@@ -343,7 +350,9 @@
         margin: 0px 5px;
     }
 
-    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
         bottom: -14px;
     }
 
@@ -406,6 +415,9 @@
         left: 0;
         margin-bottom: 0;
         flex-direction: column;
+    }
+    .checkbox-content__wrapper:not(:last-child) {
+        margin: 0;
     }
 
     .checkbox-content__label {
@@ -547,7 +559,8 @@
         left: -100px;
     }
 
-    .next-3, .prev-3 {
+    .next-3,
+    .prev-3 {
         top: 17px;
     }
 
@@ -605,7 +618,8 @@
         margin-right: 20px;
     }
 
-    .icon__whatsapp, .icon__telegram {
+    .icon__whatsapp,
+    .icon__telegram {
         width: 48px;
         height: 48px;
         background-size: 48px;
@@ -624,11 +638,11 @@
     .address__building {
         display: none;
     }
-    
+
     .media-address {
         display: block;
     }
-    
+
     /* footer */
 
     .footer {

@@ -4,6 +4,7 @@
     .media-search-content {
         width: 100%;
     }
+
     .media-form,
     .search__form {
         width: 100%;
@@ -38,7 +39,7 @@
     }
 
     .gallery-content {
-        height: 100%; 
+        height: 100%;
         flex-direction: column;
     }
 
@@ -65,7 +66,7 @@
     .gallery-slide {
         max-width: 317px;
         height: 280px;
-    } 
+    }
 
     .gallery-slider__btns {
         left: 0;
@@ -83,14 +84,18 @@
 
     /* catalog */
 
+    .btns__language {
+        padding-top: 12px;
+    }
+
     .catalog__btns {
         flex-wrap: nowrap;
+        margin-bottom: 23px;
     }
 
     .btns__language {
         flex-wrap: nowrap;
         width: 100%;
-        margin-left: 30px;
         justify-content: space-between;
         display: flex;
     }
@@ -106,7 +111,7 @@
     .tab-content-active {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
 
     .catalog-content__left {
@@ -193,6 +198,7 @@
 
     .checkbox-content {
         width: 100%;
+        margin-bottom: 26px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -223,7 +229,8 @@
         left: 14px;
     }
 
-    .next-2, .prev-2 {
+    .next-2,
+    .prev-2 {
         top: 308px;
     }
 
@@ -270,14 +277,15 @@
         bottom: calc(100% - -7px);
     }
 
-    .next-3, .prev-3 {
+    .next-3,
+    .prev-3 {
         top: 41px;
     }
 
     /* cotacts */
 
     .contacts {
-        padding-top: 30px;
+        padding-top: 11px;
         max-height: 100%;
     }
 
