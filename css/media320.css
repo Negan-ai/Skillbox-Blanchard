@@ -74,8 +74,8 @@
     }
 
     .search__btn {
-        margin-right: 7px;
-        width: 14px;
+        margin-right: 0;
+        padding: 0;
         height: 14px;
     }
 
@@ -212,17 +212,21 @@
         padding-top: 84px;
     }
 
-    .catalog__btns {
+    .catalog-top {
         flex-wrap: wrap;
         margin-bottom: 11px;
     }
 
-    .btns__language {
+    .catalog-top__switch {
         padding: 0;
         margin-left: 0;
     }
 
-    .laguage__btn {
+    .switch__item:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .switch__btn {
         margin-top: 14px;
         margin-bottom: 10px;
         width: 32px;
@@ -231,7 +235,7 @@
         background-size: 32px 32px;
     }
 
-    .laguage__btn:hover {
+    .switch__btn:hover {
         transition: background-size none;
         background-size: 32px 32px;
     }
@@ -254,7 +258,7 @@
     }
 
     .ui-accordion .ui-accordion-content {
-        padding: 18px 0;
+        padding: 2px 0;
     }
 
     .ui-accordion-content-active {
@@ -282,6 +286,7 @@
 
     .name__list {
         width: 100%;
+        column-count: 1;
     }
 
     .name__list:nth-child(2) {
@@ -413,6 +418,7 @@
         position: absolute;
         top: 40px;
         left: 0;
+        z-index: 10;
         margin-bottom: 0;
         flex-direction: column;
     }

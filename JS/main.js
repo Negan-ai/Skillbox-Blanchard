@@ -297,7 +297,7 @@ var swiper = new Swiper('.gallery-container', {
 
 /* tabs-content */
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.tabs__btn').forEach(function (tabsBtn) {
+  document.querySelectorAll('.tabs-btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // france //
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.france-autor').forEach(function (tabsBtn) {
+  document.querySelectorAll('.france-author').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // germany //
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.germany-autor').forEach(function (tabsBtn) {
+  document.querySelectorAll('.germany-author').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // italy //
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.italy-autor').forEach(function (tabsBtn) {
+  document.querySelectorAll('.italy-author').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // russia //
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.russia-autor').forEach(function (tabsBtn) {
+  document.querySelectorAll('.russia-author').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // belgium //
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.belgium-autor').forEach(function (tabsBtn) {
+  document.querySelectorAll('.belgium-author').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
@@ -614,38 +614,38 @@ $(function () {
 });
 
 $(document).ready(function () {
-  $('.laguage__btn').click(function (event) {
-    $('.laguage__btn').removeClass('default');
+  $('.switch__btn').click(function (event) {
+    $('.switch__btn').removeClass('default');
   });
-  $('.laguage__btn-1').click(function (event) {
-    $('.laguage__btn-1').addClass('default');
+  $('.switch__btn--1').click(function (event) {
+    $('.switch__btn--1').addClass('default');
   });
-  $('.laguage__btn-1').click(function (event) {
-    $('.laguage__btn-5, .laguage__btn-4, .laguage__btn-3, .laguage__btn-2').removeClass('default');
+  $('.switch__btn--1').click(function (event) {
+    $('.switch__btn--5, .switch__btn--4, .switch__btn--3, .switch__btn--2').removeClass('default');
   });
-  $('.laguage__btn-2').click(function (event) {
-    $('.laguage__btn-2').addClass('default');
+  $('.switch__btn--2').click(function (event) {
+    $('.switch__btn--2').addClass('default');
   });
-  $('.laguage__btn-2').click(function (event) {
-    $('.laguage__btn-5, .laguage__btn-4, .laguage__btn-3, .laguage__btn-1').removeClass('default');
+  $('.switch__btn--2').click(function (event) {
+    $('.switch__btn--5, .switch__btn--4, .switch__btn--3, .switch__btn--1').removeClass('default');
   });
-  $('.laguage__btn-3').click(function (event) {
-    $('.laguage__btn-3').addClass('default');
+  $('.switch__btn--3').click(function (event) {
+    $('.switch__btn--3').addClass('default');
   });
-  $('.laguage__btn-3').click(function (event) {
-    $('.laguage__btn-5, .laguage__btn-4, .laguage__btn-2, .laguage__btn-1').removeClass('default');
+  $('.switch__btn--3').click(function (event) {
+    $('.switch__btn--5, .switch__btn--4, .switch__btn--2, .switch__btn--1').removeClass('default');
   });
-  $('.laguage__btn-4').click(function (event) {
-    $('.laguage__btn-4').addClass('default');
+  $('.switch__btn--4').click(function (event) {
+    $('.switch__btn--4').addClass('default');
   });
-  $('.laguage__btn-4').click(function (event) {
-    $('.laguage__btn-5, .laguage__btn-3, .laguage__btn-3, .laguage__btn-1').removeClass('default');
+  $('.switch__btn--4').click(function (event) {
+    $('.switch__btn--5, .switch__btn--3, .switch__btn--3, .switch__btn--1').removeClass('default');
   });
-  $('.laguage__btn-5').click(function (event) {
-    $('.laguage__btn-5').addClass('default');
+  $('.switch__btn--5').click(function (event) {
+    $('.switch__btn--5').addClass('default');
   });
-  $('.laguage__btn-5').click(function (event) {
-    $('.laguage__btn-2, .laguage__btn-4, .laguage__btn-3, .laguage__btn-1').removeClass('default');
+  $('.switch__btn--5').click(function (event) {
+    $('.switch__btn--2, .switch__btn--4, .switch__btn--3, .switch__btn--1').removeClass('default');
   });
 });
 
