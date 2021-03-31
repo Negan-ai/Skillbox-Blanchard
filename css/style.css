@@ -1218,10 +1218,6 @@ input {
     width: inherit;
 }
 
-.accordion__content > ul {
-    list-style-type: none;
-}
-
 .title__value {
     display: inline-block;
     outline: none;
