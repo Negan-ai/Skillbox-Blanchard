@@ -579,37 +579,9 @@ $(document).ready(function () {
 
 /* accordion */
 $(function () {
-  $("#accordion").accordion({
+  $("#accordion, #accordion2, #accordion3, #accordion4, #accordion5").accordion({
     collapsible: true,
     heightStyle: "content",
-  });
-});
-
-$(function () {
-  $("#accordion2").accordion({
-    collapsible: true,
-    heightStyle: "content"
-  });
-});
-
-$(function () {
-  $("#accordion3").accordion({
-    collapsible: true,
-    heightStyle: "content"
-  });
-});
-
-$(function () {
-  $("#accordion4").accordion({
-    collapsible: true,
-    heightStyle: "content"
-  });
-});
-
-$(function () {
-  $("#accordion5").accordion({
-    collapsible: true,
-    heightStyle: "content"
   });
 });
 

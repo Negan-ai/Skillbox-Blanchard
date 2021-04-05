@@ -101,6 +101,10 @@
         margin-right: 34px;
     }
 
+    .ui-accordion .ui-accordion-content {
+        padding-top: 25px;
+    }
+
     .catalog-content__descr {
         margin-bottom: 21px;
     }
@@ -190,16 +194,13 @@
     .checkbox-content {
         width: 100%;
         margin-bottom: 26px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
+        column-count: 3;
+        column-gap: 50px;
     }
 
-    .checkbox-content__wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+    .checkbox-content__item:nth-child(n+5):nth-child(-n+8) {
+        margin-left: -42px;
+    } 
 
     .label__text {
         display: block;
@@ -313,10 +314,6 @@
         flex-wrap: wrap;
     }
 
-    .name-item-media {
-        display: block;
-    }
-
     .name__list {
         width: 45%;
     }
@@ -328,6 +325,10 @@
     }
 
     /* editions */
+
+    .checkbox-content__item:nth-child(n+5):nth-child(-n+8) {
+        margin-left: -60px;
+    }
 
     .pag2 {
         top: 330px;
