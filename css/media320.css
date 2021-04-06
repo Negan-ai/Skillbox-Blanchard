@@ -632,17 +632,16 @@
         margin-bottom: 25px;
     }
 
-    .icons__heading {
+    .social__heading {
         font-size: 18px;
         margin-bottom: 15px;
     }
 
-    .icon__whatsapp {
+    .whatsapp {
         margin-right: 20px;
     }
 
-    .icon__whatsapp,
-    .icon__telegram {
+    .social__link {
         width: 48px;
         height: 48px;
         background-size: 48px;
@@ -664,7 +663,8 @@
     /* footer */
 
     .footer {
-        height: 132px;
+        padding-top: 23px;
+        padding-bottom: 0;
     }
 
     .footer__logo {
@@ -676,14 +676,18 @@
         flex-direction: column-reverse;
     }
 
-    .footer__sotial {
-        margin-top: 20px;
+    .footer-social {
+        margin-bottom: 13px;
     }
 
-    .sotial__link {
+    .footer-social__link {
         width: 50px;
         height: 50px;
         background-size: 50px;
+    }
+
+    .footer-social__link:not(:last-child) {
+        margin-right: 26px;
     }
 
 }

@@ -407,16 +407,15 @@
         max-width: 335px;
     }
 
-    .icons__heading {
+    .social__heading {
         margin-bottom: 17px;
     }
 
-    .icon__whatsapp {
+    .whatsapp {
         margin-right: 26px;
     }
 
-    .icon__whatsapp,
-    .icon__telegram {
+    .social__link {
         width: 60px;
         height: 60px;
         background-size: 60px;

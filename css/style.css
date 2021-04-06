@@ -2106,23 +2106,28 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--white-color);
 }
 
-.icons__heading {
+.social__heading {
     display: block;
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-.icon__whatsapp,
-.icon__telegram {
+.social__link {
     display: inline-block;
     width: 40px;
     height: 40px;
+    transition: transform .2s ease-in-out;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.icon__whatsapp {
+.whatsapp {
     margin-right: 15px;
+}
+
+.social__link:hover {
+    transition: transform .2s ease-in-out;
+    transform: scale(1.1);
 }
 
 [class*="ground-pane"] {
@@ -2141,7 +2146,8 @@ input[type=number]::-webkit-outer-spin-button {
 /* footer */
 
 .footer {
-    height: 140px;
+    padding-top: 40px;
+    padding-bottom: 37px;
     background-color: var(--black-color);
 }
 
@@ -2152,12 +2158,20 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: space-between;
 }
 
-.sotial__link {
+.footer-social__link {
     display: inline-block;
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    transition: opacity .2s ease-in-out;
 }
 
-.sotial__link:not(:last-child) {
-    margin-right: 15px;
+.footer-social__link:hover {
+    transition: opacity .2s ease-in-out;
+    opacity: 0.6;
+}
+
+.footer-social__link:not(:last-child) {
+    margin-right: 26px;
 }
