@@ -289,7 +289,6 @@
     .events-content__item {
         min-height: 683px;
         width: 290px;
-        /* width: calc(100% / 12 * 4 - 50px); */
         margin: 0 8.5px 8.5px;
     }
 
@@ -297,6 +296,10 @@
         min-height: 480px;
         padding-left: 34px;
         padding-bottom: 55px;
+    }
+
+    .events__btn {
+        margin-top: 41px;
     }
 
     /* editions */

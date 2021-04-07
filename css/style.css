@@ -1482,7 +1482,7 @@ input {
     position: relative;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 42px;
+    margin-top: 24px;
     text-align: center;
     width: 188px;
     height: 59px;
@@ -1729,13 +1729,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .editions-rigt {
     position: relative;
+    overflow: hidden;
+    padding-left: 4px;
+    padding-bottom: 4px;
     padding-top: 6px;
-    width: 71.9%;
+    width: 72.1%;
 }
 
 .editions-container {
     height: 100%;
-    overflow: hidden;
 }
 
 .edition-slide {
@@ -2027,7 +2029,7 @@ input[type=number]::-webkit-outer-spin-button {
 .contacts-content__left {
     border: 1px solid var(--lighty-gray);
     padding: 124px 20px 0 0;
-    padding-left: calc(10% - 35px);
+    padding-left: calc((100% - 1600px) / 2);
     width: 36%;
 }
 
