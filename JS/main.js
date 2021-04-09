@@ -770,9 +770,9 @@ var swiper = new Swiper('.projects-container', {
       slidesPerGroup: 1,
     },
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 35,
-      slidesPerGroup: 2
+      slidesPerGroup: 1
     },
     // when window width is >= 480px
     980: {
