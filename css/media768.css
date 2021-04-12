@@ -353,6 +353,10 @@
     font-size: 60px;
   }
 
+  .hero__descr {
+    padding-right: 15px;
+  }
+
   /* catalog */
   .catalog-top {
     flex-wrap: wrap;

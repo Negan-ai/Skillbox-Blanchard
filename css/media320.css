@@ -116,6 +116,7 @@
   }
 
   .hero__descr {
+    padding-right: 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
@@ -236,7 +237,6 @@
   }
 
   .switch__btn:hover {
-    transition: background-size none;
     background-size: 32px 32px;
   }
 
@@ -408,13 +408,13 @@
     width: 8px;
     height: 8px;
     transform: rotate(-45deg);
-    transition: .3s;
+    transition: transform .3s ease-in-out;
     border-left: 1px solid var(--white-color);
     border-bottom: 1px solid var(--white-color);
   }
 
   .mobile-category-btn--active.mobile-category-btn::before {
-    transition: .3s;
+    transition: transform .3s ease-in-out;
     transform: rotate(135deg);
   }
 
@@ -555,20 +555,14 @@
     margin-bottom: 10px;
   }
 
-  .projects-container {
+  /* .projects-container {
     max-width: 195px;
-  }
+  } */
 
   .projects-slide,
   .partner__logotype {
-    max-width: 195px;
+    /* max-width: 195px; */
     max-height: 65px;
-  }
-
-  .projects-slide,
-  .partner__logotype {
-    min-width: 195px;
-    min-height: 65px;
   }
 
   .tooltip .mobile-tooltip-3 {

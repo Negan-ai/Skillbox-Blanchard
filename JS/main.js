@@ -774,6 +774,11 @@ var swiper = new Swiper('.projects-container', {
       spaceBetween: 35,
       slidesPerGroup: 1
     },
+    740: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+      slidesPerGroup: 2
+    },
     // when window width is >= 480px
     980: {
       slidesPerView: 2,
@@ -781,13 +786,28 @@ var swiper = new Swiper('.projects-container', {
       slidesPerGroup: 2
     },
     // when window width is >= 640px
-    1460: {
+    1260: {
       slidesPerView: 3,
       spaceBetween: 50,
       slidesPerGroup: 3,
     },
   },
 });
+
+const projSlide = document.querySelectorAll('.projects-slide');
+projSlide.forEach(function(e) {
+  if (window.innerWidth < 450) {
+  e.style.display = 'flex';
+  e.style.justifyContent = 'center';
+  e.style.alignitems = 'flex-start';
+} else if (window.innerWidth > 450) {
+  e.style.display = 'block';
+} else {
+  e.style.display = 'block';
+}
+});
+
+
 
 $(document).ready(function () {
   $('.tooltip__btn-x').click(function (event) {
