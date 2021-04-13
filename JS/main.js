@@ -14,7 +14,7 @@ new JustValidate('.contacts__form', {
 
     tel: {
       required: true,
-      maxLength: 10,
+      minLength: 10,
       function: (name, value) => {
         const phone = selector.inputmask.unmaskedvalue()
         return Number(phone) && phone.length == 10
@@ -30,7 +30,7 @@ new JustValidate('.contacts__form', {
 
     tel: {
       required: 'Введите Ваш телефон',
-      maxLength: 'Не менее десяти символов!'
+      minLength: 'Не менее десяти символов!'
     }
   },
 });
@@ -848,3 +848,25 @@ function init() {
 
 const element = document.querySelector('.select');
 const choices = new Choices(element, {});
+
+/* POST */
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});

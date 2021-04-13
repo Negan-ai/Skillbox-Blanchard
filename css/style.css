@@ -108,11 +108,11 @@ p {
   outline: none;
   border-bottom: 1px solid transparent;
   color: var(--purple-color);
-  transition: .3s;
+  transition: border-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .site-link:hover {
-  transition: border-color .3s, color .3s ease-in-out;
+  transition: border-color .3s, color .3s ease-in-out, color .3s ease-in-out;
   border-color: var(--purple-color);
   color: var(--purple-color);
 }
@@ -1062,7 +1062,7 @@ input {
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
-  transition: .3s;
+  transition: filter .3s ease-in-out;
 }
 
 .switch__btn::before {
@@ -1199,7 +1199,7 @@ input {
   display: inline-block;
   outline: none;
   height: 40px;
-  transition: .3s;
+  transition: border-color .3s ease-in-out;
   border: 1px solid transparent;
 }
 
@@ -1760,7 +1760,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 700;
   border: 2px solid transparent;
   border-radius: 100px;
-  transition: .3s;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
   background-color: transparent;
   border: 2px solid var(--purple-color);
   color: var(--white-color);
@@ -1769,21 +1769,21 @@ input[type=number]::-webkit-outer-spin-button {
 .form__btn:hover,
 .edition-slide__btn:hover {
   background-color: var(--purple-color);
-  transition: .3s;
+  transition: background-color .3s ease-in-out;
 }
 
 .form__btn:active,
 .edition-slide__btn:active {
   border-color: var(--light-purple-color);
   background-color: var(--dark-purple-color);
-  transition: .3s;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form__btn:visited,
 .edition-slide__btn:visited {
   border-color: var(--light-purple-color);
   background-color: var(--dark-purple-color);
-  transition: .3s;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form__btn::before,
@@ -1903,7 +1903,7 @@ input[type=number]::-webkit-outer-spin-button {
 .tooltip .tooltip__btn:focus+.tooltip__text,
 .tooltip__btn:hover+.tooltip__text::after,
 .tooltip__btn:focus+.tooltip__text::after {
-  transition: .3s;
+  transition: opacity .3s ease-in-out;
   opacity: 1;
   visibility: visible;
 }
@@ -1924,7 +1924,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .more-projects {
   color: var(--purple-color);
-  transition: .3s;
+  transition: color .3s ease-in-out;
 }
 
 .more-projects:hover {
@@ -1970,13 +1970,13 @@ input[type=number]::-webkit-outer-spin-button {
   /* object-fit: none; */
   filter: grayscale(100%);
   opacity: 0.5;
-  transition: .3s;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .partner__logotype:hover {
   filter: grayscale(0);
   opacity: 1;
-  transition: .3s;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .next-3,
