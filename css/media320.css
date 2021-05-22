@@ -69,7 +69,7 @@
 
   .search__form {
     padding-top: 10px;
-    width: 220px;
+    width: 295px;
     margin: 0 auto;
   }
 
@@ -92,9 +92,13 @@
   }
 
   .search-is-open {
-    padding: 37px 0;
+    padding: 17px 0;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(40px);
+  }
+
+  .transperant {
+    background-color: transparent;
   }
 
   /* hero */
@@ -258,7 +262,7 @@
   }
 
   .ui-accordion .ui-accordion-content {
-    padding: 18px 0 82px;
+    padding: 18px 0 32px;
   }
 
   .ui-accordion-content-active {
@@ -393,7 +397,6 @@
     padding: 10px 0px;
     font-weight: 700;
     width: 100%;
-    margin-bottom: 40px;
     background-color: transparent;
     border-top: 1px solid var(--light-gray-color);
     border-bottom: 1px solid var(--light-gray-color);
@@ -408,24 +411,23 @@
     width: 8px;
     height: 8px;
     transform: rotate(-45deg);
-    transition: transform .3s ease-in-out;
     border-left: 1px solid var(--white-color);
     border-bottom: 1px solid var(--white-color);
   }
 
   .mobile-category-btn--active.mobile-category-btn::before {
-    transition: transform .3s ease-in-out;
+    top: 17px;
     transform: rotate(135deg);
   }
 
   .checkbox-content {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    z-index: 10;
     margin-bottom: 0;
     column-count: 1;
     column-gap: 0;
+  }
+
+  .checkbox-content--active {
+    display: block;
   }
 
   .checkbox-content__item:nth-child(n+5):nth-child(-n+8) {
@@ -437,12 +439,17 @@
   }
 
   .checkbox-content__label {
-    padding-top: 10px;
-    border-bottom: 1px solid var(--light-gray-color);
     display: none;
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
   }
 
   .checkbox-content__label--active {
+    display: block;
+  }
+
+  .checkbox-selected {
     display: block;
   }
 
@@ -463,12 +470,19 @@
     border-color: var(--purple-color);
   }
 
-  .checkbox-selected {
-    display: block;
-    background-image: url("../img/editions-img/X-checkbox.png");
+  .checkbox-content__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/editions-img/close-checkbox.svg");
     background-repeat: no-repeat;
     background-position: right center;
-    color: var(--purple-color);
+  }
+
+  .checkbox-content__btn--active {
+    display: block;
   }
 
   .checkbox-unselected {
@@ -619,6 +633,10 @@
 
   .form__input {
     margin-bottom: 21px;
+  }
+
+  .toast__content {
+    left: 10px;
   }
 
   .form__btn {

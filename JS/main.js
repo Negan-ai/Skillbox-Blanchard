@@ -1,3 +1,51 @@
+/* POST */
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function(e) { //Change
+    e.preventDefault();
+    const toastClose = document.querySelectorAll('.toast__close');
+    const inputEmail = document.querySelector('.email');
+    const inputTel = document.querySelector('.tel');
+    const falseEmail = document.querySelector('.false-email');
+    const trueEmail = document.querySelector('.true-email');
+
+    toastClose.forEach(function(e) {
+    e.addEventListener('click', function() {
+          if (trueEmail.classList.contains('email-status')) {
+            trueEmail.classList.remove('email-status');
+          } else if (falseEmail.classList.contains('email-status')) {
+            falseEmail.classList.remove('email-status');
+          }
+        });
+    })
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+
+      if ((inputEmail.value == '' && inputTel.value !== '') ||
+          (inputEmail.value !== '' && inputTel.value == '') ||
+          (inputEmail.value == '' && inputTel.value == '')) {
+        falseEmail.classList.add('email-status');
+        trueEmail.classList.remove('email-status');
+      } else {
+        trueEmail.classList.add('email-status');
+        falseEmail.classList.remove('email-status');
+      }
+
+
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
 // form //
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999) 999-99-99");
@@ -21,7 +69,6 @@ new JustValidate('.contacts__form', {
       }
     },
   },
-
   messages: {
     name: {
       required: 'Как Вас зовут?',
@@ -166,15 +213,23 @@ $(document).ready(function () {
   });
 });
 
+const searchBtn = document.querySelector('.search-closed__btn').addEventListener('click', () => {
+  headerTop.classList.remove('transperant');
+})
+const headerTop = document.querySelector('.header-top');
+const serchX = document.querySelector('.media-search').addEventListener('click', () => {
+  headerTop.classList.add('transperant');
+})
+
 $(document).ready(function () {
   $('.media-search').click(function (event) {
-    $('.header-top__inner').addClass('search-is-open');
+    $('.header').addClass('search-is-open');
   });
 });
 
 $(document).ready(function () {
   $('.search-closed__btn').click(function (event) {
-    $('.header-top__inner').removeClass('search-is-open');
+    $('.header').removeClass('search-is-open');
   });
 });
 
@@ -247,7 +302,7 @@ var swiper = new Swiper('.gallery-container', {
       slidesPerView: 1,
       slidesPerGroup: 1,
       slidesPerColumn: 1,
-      spaceBetween: 0,
+      spaceBetween: 15,
     },
     480: {
       slidesPerView: 1,
@@ -634,84 +689,15 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function() {
-//   $('.events__btn').click(function(event) {
-//       $('.event-hedden-768').addClass('event-hedden-768-active');
-//   });
-// });
-
-// $(document).ready(function() {
-//   $('.events__btn').click(function(event) {
-//       $('.events__btn').addClass('event-btn-hidden');
-//   });
-// });
-
 /* events-slider */
 var swiper = new Swiper('.events-container', {
   slidesPerView: 1,
   slidesPerGroup: 1,
+  spaceBetween: 15,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-});
-
-/* checkbox */
-$(document).ready(function () {
-  $('.mobile-category-btn').click(function (event) {
-    $('.mobile-category-btn').toggleClass('mobile-category-btn--active');
-  });
-  $('.mobile-category-btn').click(function (event) {
-    $('.checkbox-content__label').toggleClass('checkbox-content__label--active');
-  });
-  $('.checkbox-content__label').click(function (event) {
-    $('.checkbox-content__label').removeClass('checkbox-content__label--active');
-  });
-  $('.checkbox-content__label').click(function (event) {
-    $('.mobile-category-btn').removeClass('mobile-category-btn--active');
-  });
-  $('#checkbox-1, #checkbox-2, #checkbox-3, #checkbox-4, #checkbox-5, #checkbox-6, #checkbox-7, #checkbox-8, #checkbox-9, #checkbox-10, #checkbox-11, #checkbox-12').click(function (event) {
-    $('.checkbox-selected').removeClass('checkbox-selected');
-  });
-  $('#checkbox-1').click(function (event) {
-    $('#checkbox-1').addClass('checkbox-selected');
-  });
-  $('#checkbox-2').click(function (event) {
-    $('#checkbox-2').addClass('checkbox-selected');
-  });
-  $('#checkbox-3').click(function (event) {
-    $('#checkbox-3').addClass('checkbox-selected');
-  });
-  $('#checkbox-4').click(function (event) {
-    $('#checkbox-4').addClass('checkbox-selected');
-  });
-  $('#checkbox-5').click(function (event) {
-    $('#checkbox-5').addClass('checkbox-selected');
-  });
-  $('#checkbox-6').click(function (event) {
-    $('#checkbox-6').addClass('checkbox-selected');
-  });
-  $('#checkbox-7').click(function (event) {
-    $('#checkbox-7').addClass('checkbox-selected');
-  });
-  $('#checkbox-8').click(function (event) {
-    $('#checkbox-8').addClass('checkbox-selected');
-  });
-  $('#checkbox-9').click(function (event) {
-    $('#checkbox-9').addClass('checkbox-selected');
-  });
-  $('#checkbox-10').click(function (event) {
-    $('#checkbox-10').addClass('checkbox-selected');
-  });
-  $('#checkbox-11').click(function (event) {
-    $('#checkbox-11').addClass('checkbox-selected');
-  });
-  $('#checkbox-12').click(function (event) {
-    $('#checkbox-12').addClass('checkbox-selected');
-  });
-  $('.checkbox-selected').click(function (event) {
-    $('.checkbox-content__label').addClass('checkbox-content__label--active');
-  });
 });
 
 /* slider-editions */
@@ -794,21 +780,6 @@ var swiper = new Swiper('.projects-container', {
   },
 });
 
-const projSlide = document.querySelectorAll('.projects-slide');
-projSlide.forEach(function(e) {
-  if (window.innerWidth < 450) {
-  e.style.display = 'flex';
-  e.style.justifyContent = 'center';
-  e.style.alignitems = 'flex-start';
-} else if (window.innerWidth > 450) {
-  e.style.display = 'block';
-} else {
-  e.style.display = 'block';
-}
-});
-
-
-
 $(document).ready(function () {
   $('.tooltip__btn-x').click(function (event) {
     $('.tooltip__btn-x').addClass('tooltip-closed');
@@ -825,20 +796,13 @@ function init() {
     center: [55.758463, 37.601079],
     zoom: 14
   });
-  var myGeoObject = new ymaps.GeoObject({
-    // geometry: {
-    //     type: "Point", // тип геометрии - точка
-    //     coordinates: [55.758463,37.601079] // координаты точки
-    // }
-  });
-
+  var myGeoObject = new ymaps.GeoObject();
   var myPlacemark = new ymaps.Placemark([55.758463, 37.601079], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/map-marker.svg',
     iconImageSize: [20, 20],
     iconImageOffset: [-3, -42]
   });
-
 
   myMap.geoObjects.add(myGeoObject);
   myMap.geoObjects.add(myPlacemark);
@@ -849,24 +813,3 @@ function init() {
 const element = document.querySelector('.select');
 const choices = new Choices(element, {});
 
-/* POST */
-$(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-});
