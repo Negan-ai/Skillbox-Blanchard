@@ -366,6 +366,10 @@
     column-count: 2;
   }
 
+  .ui-accordion-content-active {
+    height: auto;
+  }
+
   /* events */
   .events-content {
     justify-content: center;
