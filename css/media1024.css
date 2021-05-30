@@ -32,7 +32,7 @@
   }
 
  .projects-container {
-    max-width: 818px;
+    max-width: 855px;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -43,7 +43,7 @@
   }
 
   .contacts-content__left {
-    padding: 122px 20px 0 49px;
+    /* padding: 122px 20px 0 49px; */
     width: 48%;
   }
 
@@ -434,7 +434,7 @@
   /* contacts */
 
   .contacts-content__inner {
-    padding-left: calc(-25px);
+    padding-left: 50px;
   }
 
   .contacts__form {
