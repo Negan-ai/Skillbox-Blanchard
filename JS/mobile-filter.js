@@ -1,44 +1,69 @@
 /* checkbox-filter */
 $(document).ready(function () {
   $('.mobile-category-btn').click(function () {
-    $('.checkbox-content__item').toggleClass('checkbox-content__label--active');
+    $('.checkbox-content__inner').toggleClass('checkbox-content__inner--active');
     $('.mobile-category-btn').toggleClass('mobile-category-btn--active');
     $('.checkbox-content__item').removeClass('checkbox-unselected');
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.checkbox-content__item').forEach(function (e) {
-    e.addEventListener('click', function (e) {
-      const label = e.currentTarget.dataset.path;
-      document.querySelectorAll('.checkbox-content__item').forEach(function () {
-        document.querySelector(`[data-target='${label}']`).classList.add('checkbox-selected');
-      });
-      const labelStatus = e.currentTarget.dataset.open;
-      document.querySelectorAll('.checkbox-content__item').forEach(function () {
-        document.querySelector(`[data-close='${labelStatus}']`).classList.add('checkbox-selected');
-      });
+const labelCheck = document.querySelectorAll('.checkbox');
+const checkInner = document.querySelectorAll('.checkbox-content__inner');
+const filterTitle = document.querySelector('.mobile-category-btn');
+const closBtn = document.querySelectorAll('.checkbox-content__btn');
+
+filterTitle.addEventListener('click', () => {
+  labelCheck.forEach(e => {
+    checkInner.forEach(el => {
+      closBtn.forEach(ele => {
+        if (!el.classList.contains('checkbox-content__inner--active')) {
+          e.checked = false;
+          e.disabled = false;
+          if ((e.checked == false && !el.classList.contains('checkbox-content__inner--active'))) {
+            el.classList.remove('checkbox-selected');
+            ele.classList.remove('checkbox-selected');
+          }
+        } else if (el.classList.contains('checkbox-content__inner--active')) {
+          e.checked = true;
+          e.disabled = true;
+        }
+      })
+    })
+  });
+});
+
+checkInner.forEach( (e) => {
+  e.addEventListener('click',  (e) => {
+    const label = e.currentTarget.dataset.path;
+    checkInner.forEach( ()  =>{
+      document.querySelector(`[data-path='${label}']`).classList.add('checkbox-selected');
     });
   });
-  document.querySelectorAll('.checkbox-content__btn').forEach(function (e) {
-    e.addEventListener('click', function (e) {
-      const disabledLabel = e.currentTarget.dataset.active;
+});
 
-      document.querySelectorAll('.checkbox-content__item').forEach(function (e) {
-        document.querySelector(`[data-disable='${disabledLabel}']`).removeAttribute('disabled');
+closBtn.forEach( (e) => {
+  e.addEventListener('click', (e) => {
+    const disabledLabel = e.currentTarget.dataset.active;
+    const closeLabel = e.currentTarget.dataset.close;
 
-        if (e.classList.contains('checkbox-content__label--active')) {
-          document.querySelector(`[data-disable='${disabledLabel}']`).classList.add('checkbox-selected');
-        } else {
-          document.querySelector(`[data-disable='${disabledLabel}']`).classList.add('checkbox-unselected');
-        }
+    closBtn.forEach( () => {
+      document.querySelector(`[data-active='${disabledLabel}']`).classList.remove('checkbox-selected');
+      document.querySelector(`[data-open='${closeLabel}']`).classList.remove('checkbox-selected');
+
+      labelCheck.forEach( () => {
+        document.querySelector(`[data-checked='${disabledLabel}']`).checked = false;
+        document.querySelector(`[data-checked='${disabledLabel}']`).disabled = false;
       });
     });
   });
 });
 
+labelCheck.forEach( (e) => {
+  e.addEventListener('click', (e) => {
+    const checkedInput = e.currentTarget.dataset.checked;
 
-
-
-
-
+  labelCheck.forEach( (e) => {
+    document.querySelector(`[data-active='${checkedInput}']`).classList.add('checkbox-selected');
+  })
+  })
+})
